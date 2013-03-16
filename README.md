@@ -43,15 +43,14 @@ print_r($oauth->getUserInfo());
 
 If all goes well you should see a dump of the users tokens and data.
 
-### Calling OAuth2 API's using Guzzle
+### Calling OAuth 2 APIs using Guzzle
 
-You can also use this package to make calls to your respective API's 
+You can also use this package to make calls to your respective APIs 
 using Guzzle.
 
 ```php
 $client = new \OAuth2\Client('https://graph.facebook.com');
 $client->setUserTokens($oauth->getUserTokens());
-$client->setBaseUrl('https://apis.live.net/v5.0');
 
 echo $client->get('me')->send();
 ```
