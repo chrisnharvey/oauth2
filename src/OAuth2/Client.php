@@ -29,7 +29,7 @@ class Client extends GuzzleClient
         $baseUrl = parent::getBaseUrl(false);
         $url = $baseUrl;
 
-        if ($this->tokens) {
+        if ($this->tokens instanceof AccessToken) {
             $url .= strpos($url, '?') ? '&' : '?';
             $url .= http_build_query(array(
                 'access_token' => $this->tokens->access_token
