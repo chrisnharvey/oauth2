@@ -2,6 +2,7 @@
 
 namespace OAuth2\Provider;
 
+use \OAuth2\Provider;
 use \OAuth2\Token\Access;
 
 /**
@@ -14,7 +15,7 @@ use \OAuth2\Token\Access;
  * @license    http://philsturgeon.co.uk/code/dbad-license
  */
 
-class Facebook extends \OAuth2\Provider implements \OAuth2\Provider\ProviderInterface
+class Facebook extends Provider implements ProviderInterface
 {
     protected $scope = array('offline_access', 'email', 'read_stream');
 

@@ -14,7 +14,7 @@ use \OAuth2\Token\Access;
  * @license    http://philsturgeon.co.uk/code/dbad-license
  */
 
-class Foursquare extends \OAuth2\Provider implements \OAuth2\Provider\ProviderInterface
+class Foursquare extends Provider implements ProviderInterface
 {
     public $method = 'POST';
 

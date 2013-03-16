@@ -2,6 +2,7 @@
 
 namespace OAuth2\Provider;
 
+use \OAuth2\Provider;
 use \OAuth2\Token\Access;
 
 /**
@@ -14,7 +15,7 @@ use \OAuth2\Token\Access;
  * @license    http://philsturgeon.co.uk/code/dbad-license
  */
 
-class Paypal extends \OAuth2\Provider implements \OAuth2\Provider\ProviderInterface
+class Paypal extends Provider implements ProviderInterface
 {
     /**
      * @var  string  default scope (useful if a scope is required for user info)

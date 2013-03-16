@@ -2,6 +2,7 @@
 
 namespace OAuth2\Provider;
 
+use \OAuth2\Provider;
 use \OAuth2\Token\Access;
 use \OAuth2\Token\Refresh;
 use \OAuth2\Exception;
@@ -14,7 +15,7 @@ use \OAuth2\Exception;
  * @author     Lavr Lyndin
  */
 
-class Yandex extends \OAuth2\Provider implements \OAuth2\Provider\ProviderInterface
+class Yandex extends Provider implements ProviderInterface
 {
     public $method = 'POST';
 

@@ -2,6 +2,7 @@
 
 namespace OAuth2\Provider;
 
+use \OAuth2\Provider;
 use \OAuth2\Token\Access;
 
 /**
@@ -12,7 +13,7 @@ use \OAuth2\Token\Access;
  * @author     Brennan Novak
  */
 
-class Appnet extends \OAuth2\Provider implements \OAuth2\Provider\ProviderInterface
+class Appnet extends Provider implements ProviderInterface
 {
     /**
      * @array scope items for App.net

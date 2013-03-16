@@ -2,6 +2,7 @@
 
 namespace OAuth2\Provider;
 
+use \OAuth2\Provider;
 use \OAuth2\Token\Access;
 
 /**
@@ -14,7 +15,7 @@ use \OAuth2\Token\Access;
  * @license    http://philsturgeon.co.uk/code/dbad-license
  */
 
-class Instagram extends \OAuth2\Provider implements \OAuth2\Provider\ProviderInterface
+class Instagram extends Provider implements ProviderInterface
 {
     /**
      * @var  string  scope separator, most use "," but some like Google are spaces
