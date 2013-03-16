@@ -199,7 +199,5 @@ class Provider
                 return new Refresh($return);
             break;
         }
-
     }
-
 }
