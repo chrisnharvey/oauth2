@@ -14,7 +14,7 @@ use \OAuth2\Token\Access;
  * @license    http://philsturgeon.co.uk/code/dbad-license
  */
 
-class Facebook extends \OAuth2\Provider
+class Facebook extends \OAuth2\Provider implements \OAuth2\Provider\ProviderInterface
 {
     protected $scope = array('offline_access', 'email', 'read_stream');
 

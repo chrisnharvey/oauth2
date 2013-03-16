@@ -12,7 +12,7 @@ use \OAuth2\Token\Access;
  * @author     Lavr Lyndin
  */
 
-class Vkontakte extends \OAuth2\Provider
+class Vkontakte extends \OAuth2\Provider implements \OAuth2\Provider\ProviderInterface
 {
     protected $method = 'POST';
     public $uid_key = 'user_id';

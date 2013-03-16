@@ -12,7 +12,7 @@ use \OAuth2\Token\Access;
  * @author     Brennan Novak
  */
 
-class Appnet extends \OAuth2\Provider
+class Appnet extends \OAuth2\Provider implements \OAuth2\Provider\ProviderInterface
 {
     /**
      * @array scope items for App.net

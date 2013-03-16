@@ -14,7 +14,7 @@ use \OAuth2\Exception;
  * @author     Lavr Lyndin
  */
 
-class Yandex extends \OAuth2\Provider
+class Yandex extends \OAuth2\Provider implements \OAuth2\Provider\ProviderInterface
 {
     public $method = 'POST';
 

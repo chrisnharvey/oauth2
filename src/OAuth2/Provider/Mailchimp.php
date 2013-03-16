@@ -14,7 +14,7 @@ use \OAuth2\Token\Access;
  * @license    http://philsturgeon.co.uk/code/dbad-license
  */
 
-class Mailchimp extends \OAuth2\Provider
+class Mailchimp extends \OAuth2\Provider implements \OAuth2\Provider\ProviderInterface
 {
     /**
      * @var  string  the method to use when requesting tokens

@@ -12,7 +12,7 @@ use \OAuth2\Token\Access;
  * @author     Lavr Lyndin
  */
 
-class Mailru extends \OAuth2\Provider
+class Mailru extends \OAuth2\Provider implements \OAuth2\Provider\ProviderInterface
 {
     public $method = 'POST';
 
