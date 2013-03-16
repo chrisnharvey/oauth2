@@ -2,7 +2,7 @@
 
 namespace OAuth\Provider;
 
-use \OAuth\OAuth2\Token\Access;
+use \OAuth2\Token\Access;
 
 /**
  * Mailru OAuth2 Provider
@@ -12,7 +12,7 @@ use \OAuth\OAuth2\Token\Access;
  * @author     Lavr Lyndin
  */
 
-class Mailru extends \OAuth\OAuth2\Provider
+class Mailru extends \OAuth2\Provider
 {
     public $method = 'POST';
 

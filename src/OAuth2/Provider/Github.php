@@ -2,7 +2,7 @@
 
 namespace OAuth\Provider;
 
-use \OAuth\OAuth2\Token\Access;
+use \OAuth2\Token\Access;
 
 /**
  * GitHub OAuth2 Provider
@@ -14,7 +14,7 @@ use \OAuth\OAuth2\Token\Access;
  * @license    http://philsturgeon.co.uk/code/dbad-license
  */
 
-class Github extends \OAuth\OAuth2\Provider
+class Github extends \OAuth2\Provider
 {
     public function authorizeUrl()
     {

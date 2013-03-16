@@ -2,8 +2,8 @@
 
 namespace OAuth\Provider;
 
-use \OAuth\OAuth2\Token\Access;
-use \OAuth\OAuth2\Exception;
+use \OAuth2\Token\Access;
+use \OAuth2\Exception;
 
 /**
  * Google OAuth2 Provider
@@ -15,7 +15,7 @@ use \OAuth\OAuth2\Exception;
  * @license    http://philsturgeon.co.uk/code/dbad-license
  */
 
-class Google extends \OAuth\OAuth2\Provider
+class Google extends \OAuth2\Provider
 {
     /**
      * @var  string  the method to use when requesting tokens

@@ -2,9 +2,9 @@
 
 namespace OAuth\Provider;
 
-use \OAuth\OAuth2\Token\Access;
-use \OAuth\OAuth2\Token\Refresh;
-use \OAuth\OAuth2\Exception;
+use \OAuth2\Token\Access;
+use \OAuth2\Token\Refresh;
+use \OAuth2\Exception;
 
 /**
  * Yandex OAuth2 Provider
@@ -14,7 +14,7 @@ use \OAuth\OAuth2\Exception;
  * @author     Lavr Lyndin
  */
 
-class Yandex extends \OAuth\OAuth2\Provider
+class Yandex extends \OAuth2\Provider
 {
     public $method = 'POST';
 
