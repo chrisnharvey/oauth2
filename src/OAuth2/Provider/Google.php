@@ -1,6 +1,6 @@
 <?php
 
-namespace OAuth\Provider;
+namespace OAuth2\Provider;
 
 use \OAuth2\Token\Access;
 use \OAuth2\Exception;
