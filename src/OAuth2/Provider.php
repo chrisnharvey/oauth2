@@ -15,7 +15,7 @@ use \OAuth2\Token\Authorize;
  * @license    http://philsturgeon.co.uk/code/dbad-license
  */
 
-abstract class Provider
+class Provider
 {
     /**
      * @var  string  provider name
