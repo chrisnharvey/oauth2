@@ -117,20 +117,6 @@ abstract class Provider
      */
     abstract public function getUserInfo();
 
-    public function process(callable $process)
-    {
-        if (! isset($_GET['code'])) {
-            // By sending no options it'll come back here
-            $params = $this->authorize();
-
-            return $process("{$this->authorizeUrl()}?".http_build_query($params));
-        } else {
-            $this->token = $this->access($_GET['code']);
-
-            return $this;
-        }
-    }
-
     public function token()
     {
         return isset($this->token) ? $this->token : false;
