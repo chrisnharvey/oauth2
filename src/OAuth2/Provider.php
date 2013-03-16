@@ -115,8 +115,7 @@ class Provider
             'redirect_uri'      => isset($options['redirect_uri']) ? $options['redirect_uri'] : $this->redirect_uri,
             'state'             => $state,
             'scope'             => is_array($this->scope) ? implode($this->scope_seperator, $this->scope) : $this->scope,
-            'response_type'     => 'code',
-            'approval_prompt'   => 'force' // - google force-recheck
+            'response_type'     => 'code'
         );
 
         $params = array_merge($params, $this->params);
