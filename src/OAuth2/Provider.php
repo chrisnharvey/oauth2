@@ -122,13 +122,6 @@ abstract class Provider
         return isset($this->token) ? $this->token : false;
     }
 
-    public function setToken(Access $token)
-    {
-        $this->token = $token;
-
-        return $this;
-    }
-
     /*
     * Get an authorization code from Facebook.  Redirects to Facebook, which this redirects back to the app using the redirect address you've set.
     */
