@@ -79,52 +79,33 @@ class Provider
         $this->redirect_uri = $options['redirect_url'];
     }
 
-    /**
-     * Return the value of any protected class variable.
-     *
-     *     // Get the provider signature
-     *     $signature = $provider->signature;
-     *
-     * @param  string $key variable name
-     * @return mixed
-     */
-    public function __get($key)
+    public function isAuthenticated()
     {
-        return $this->$key;
+        if (isset($_GET['code'])) {
+            $this->tokens = $this->access($_GET['code']);
+
+            return true;
+        } elseif (isset($this->tokens)) {
+            return true;
+        }
+
+        return false;
     }
 
-    /**
-     * Returns the authorization URL for the provider.
-     *
-     *     $url = $provider->url_authorize();
-     *
-     * @return string
-     */
-    abstract public function authorizeUrl();
+    public function getAuthenticationUrl()
+    {
+        if ( ! isset($_GET['code'])) {
+            $params = $this->authorize();
 
-    /**
-     * Returns the access token endpoint for the provider.
-     *
-     *     $url = $provider->url_access_token();
-     *
-     * @return string
-     */
-    abstract public function accessTokenUrl();
-
-    /**
-     * @param  OAuth2_Token_Access $token
-     * @return array               basic user info
-     */
-    abstract public function getUserInfo();
+            return "{$this->authorizeUrl()}?".http_build_query($params);
+        }
+    }
 
     public function getUserTokens()
     {
-        return isset($this->token) ? $this->token : false;
+        return isset($this->tokens) ? $this->tokens : false;
     }
 
-    /*
-    * Get an authorization code from Facebook.  Redirects to Facebook, which this redirects back to the app using the redirect address you've set.
-    */
     public function authorize($options = array())
     {
         $state = md5(uniqid(rand(), true));
