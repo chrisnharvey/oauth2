@@ -117,7 +117,7 @@ abstract class Provider
      */
     abstract public function getUserInfo();
 
-    public function token()
+    public function getUserTokens()
     {
         return isset($this->token) ? $this->token : false;
     }
