@@ -65,4 +65,4 @@ This example should show your Facebook profile from the API along with the heade
 3. Write a test which shows that the bug was fixed or that the feature works as expected
 4. Send a pull request and bug me until I merge it
 
-[the repository]: https://github.com/chrisnharvey/oauth
+[the repository]: https://github.com/chrisnharvey/oauth2
