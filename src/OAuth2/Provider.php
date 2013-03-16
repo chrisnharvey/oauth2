@@ -1,9 +1,9 @@
 <?php
 
-namespace OAuth\OAuth2;
+namespace OAuth2;
 
-use \OAuth\OAuth2\Token\Access;
-use \OAuth\OAuth2\Token\Authorize;
+use \OAuth2\Token\Access;
+use \OAuth2\Token\Authorize;
 
 /**
  * OAuth2 Provider
