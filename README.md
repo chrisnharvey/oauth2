@@ -23,7 +23,7 @@ Authorize users with your application using multiple OAuth 2 providers.
 In this example we will authenticate the user using Facebook.
 
 ```php
-$oauth = \OAuth2\Provider\Facebook(array(
+$oauth = new \OAuth2\Provider\Facebook(array(
 	'id' => 'CLIENT_ID',
 	'secret' => 'CLIENT_SECRET',
 	'redirect_url' => 'URL_TO_THIS_PAGE'
