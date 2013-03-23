@@ -17,6 +17,7 @@ Authorize users with your application using multiple OAuth 2 providers.
 - Vkontakte
 - Windows Live
 - Yandex
+- YouTube
 
 ## Usage Example
 
