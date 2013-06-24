@@ -78,6 +78,11 @@ abstract class Provider
      */
     public abstract function getUserInfo();
 
+    /**
+     * Is this user authenticated already?
+     * 
+     * @return boolean
+     */
     public function isAuthenticated()
     {
         if (isset($_GET['code'])) {
