@@ -56,6 +56,12 @@ abstract class Provider
         $this->redirect_uri = $options['redirect_url'];
     }
     
+    /**
+     * Get the authorize URL where the user will be redirected to approve
+     * the application.
+     * 
+     * @return string The authorize url
+     */
     public abstract function authorizeUrl();
     
     public abstract function accessTokenUrl();
