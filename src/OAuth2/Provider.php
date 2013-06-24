@@ -64,6 +64,11 @@ abstract class Provider
      */
     public abstract function authorizeUrl();
     
+    /**
+     * Get the access token URL
+     * 
+     * @return string The access token url
+     */
     public abstract function accessTokenUrl();
     
     public abstract function getUserInfo();
