@@ -32,8 +32,6 @@ abstract class Provider
     protected $scope_seperator = ',';
 
     /**
-     * Overloads default class properties from the options.
-     *
      * Any of the provider options can be set here, such as app_id or secret.
      *
      * @param  array     $options provider options
