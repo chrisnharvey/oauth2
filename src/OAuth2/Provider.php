@@ -15,7 +15,7 @@ use \OAuth2\Token\Authorize;
  * @license    http://philsturgeon.co.uk/code/dbad-license
  */
 
-class Provider
+abstract class Provider
 {
     /**
      * @var  string  provider name
@@ -78,6 +78,12 @@ class Provider
 
         $this->redirect_uri = $options['redirect_url'];
     }
+    
+    public abstract function authorizeUrl();
+    
+    public abstract function accessTokenUrl();
+    
+    public abstract function getUserInfo();
 
     public function isAuthenticated()
     {
