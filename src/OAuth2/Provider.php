@@ -71,6 +71,11 @@ abstract class Provider
      */
     public abstract function accessTokenUrl();
     
+    /**
+     * Get information about the logged in user
+     * 
+     * @return array The user data
+     */
     public abstract function getUserInfo();
 
     public function isAuthenticated()
