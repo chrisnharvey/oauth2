@@ -62,21 +62,21 @@ abstract class Provider
      * 
      * @return string The authorize url
      */
-    public abstract function authorizeUrl();
+    abstract public function authorizeUrl();
     
     /**
      * Get the access token URL
      * 
      * @return string The access token url
      */
-    public abstract function accessTokenUrl();
+    abstract public function accessTokenUrl();
     
     /**
      * Get information about the logged in user
      * 
      * @return array The user data
      */
-    public abstract function getUserInfo();
+    abstract public function getUserInfo();
 
     /**
      * Is this user authenticated already?
