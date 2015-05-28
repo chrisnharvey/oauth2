@@ -1,5 +1,7 @@
 # OAuth 2.0 Composer Package
 
+_Deprecated: Use [league/oauth2-client](https://github.com/thephpleague/oauth2-client)._
+
 Authorize users with your application using multiple OAuth 2 providers.
 
 ## Supported Providers
